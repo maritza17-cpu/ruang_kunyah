@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruang_Kunyah | Jajanan Favorit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Dekorasi Bola-Bola Warna -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">🥯</span>
+      <span>Ruang<span class="brand-accent">_Kunyah</span></span>
+    </a>
+
+    <nav class="nav">
+      <a href="#produk" class="nav-link">
+        <span>🍽️</span> Menu
+      </a>
+      <a href="#keranjang" class="nav-link cart-link">
+        <span>🛒</span> Keranjang
+        <span class="cart-badge" id="jumlah-keranjang">0</span>
+      </a>
+      <a href="#kontak" class="nav-link">
+        <span>💬</span> Kontak
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">✨ WELCOME TO RUANG_KUNYAH ✨</p>
+
+        <h1>
+          Teman ngemil<br>
+          <span>di setiap waktu.</span>
+        </h1>
+
+        <p>
+          Nikmati aneka jajanan lezat dengan harga
+          ramah di kantong. Yuk, pilih camilan favoritmu! 🥟
+        </p>
+
+        <a class="hero-button" href="#produk">
+          Lihat Menu <span>→</span>
+        </a>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-circle"></div>
+
+        <div class="art-card">
+          <span class="art-label">FRESH & DELICIOUS</span>
+          <div class="art-box">🥟</div>
+          <strong>Happy Snacking!</strong>
+          <small>Jajanan enak, bikin nagih 💛</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produk">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">🍡 MENU FAVORIT 🍡</p>
+          <h2>Menu Ruang_Kunyah</h2>
+          <p class="section-desc">
+            Pilih camilan favoritmu hari ini! Klik untuk menambah kebahagiaan~ ✨
+          </p>
+        </div>
+      </div>
+
+      <div class="grid">
+
+        <!-- PRODUK 1 -->
+        <article class="kartu">
+          <div class="product-image">
+            <img
+              src="cireng.jpeg"
+              alt="Cireng Isi Ayam Suir">
+            <div class="product-badge">Best Seller ⭐</div>
+          </div>
+
+          <div class="product-info">
+            <span class="category">Jajanan Gurih 🧀</span>
+            <h3>Cireng Isi Ayam Suir</h3>
+            <p class="harga">Rp 5.000 / 3 pcs</p>
+
+            <button class="btn"
+              data-id="1"
+              data-nama="Cireng Isi Ayam Suir (3 pcs)"
+              data-harga="5000">
+              🛒 Masukkan Keranjang
+            </button>
+          </div>
+        </article>
+
+        <!-- PRODUK 2 -->
+        <article class="kartu">
+          <div class="product-image">
+            <img
+              src="lumpia basah.jpeg"
+              alt="Lumpiah Basah">
+            <div class="product-badge">Tradisional 💚</div>
+          </div>
+
+          <div class="product-info">
+            <span class="category">Jajanan Tradisional 🌿</span>
+            <h3>Lumpiah Basah</h3>
+            <p class="harga">Rp 10.000</p>
+
+            <button class="btn"
+              data-id="2"
+              data-nama="Lumpiah Basah"
+              data-harga="10000">
+              🛒 Masukkan Keranjang
+            </button>
+          </div>
+        </article>
+
+        <!-- PRODUK 3 -->
+        <article class="kartu">
+          <div class="product-image">
+            <img
+              src="WhatsApp Image 2026-11-27 at 17.47.57.jpeg"
+              alt="Risol Mayo">
+            <div class="product-badge">Creamy 🧡</div>
+          </div>
+
+          <div class="product-info">
+            <span class="category">Jajanan Gurih 🧀</span>
+            <h3>Risol Mayo</h3>
+            <p class="harga">Rp 2.000 / pcs</p>
+
+            <button class="btn"
+              data-id="3"
+              data-nama="Risol Mayo (1 pcs)"
+              data-harga="2000">
+              🛒 Masukkan Keranjang
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section cart-section" id="keranjang">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">🛒 RINGKASAN BELANJA 🛒</p>
+          <h2>Keranjang Belanja</h2>
+          <p class="section-desc">
+            Periksa kembali pesananmu, pastikan tidak ada yang terlewat~ 😊
+          </p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>🍽️ Produk</th>
+              <th>💰 Harga</th>
+              <th>🔢 Jumlah</th>
+              <th>💵 Subtotal</th>
+              <th>❌ Aksi</th>
+            </tr>
+          </thead>
+
+          <tbody id="isi-keranjang">
+            <tr class="empty-cart">
+              <td colspan="5">
+                <div class="empty-state">
+                  <span class="empty-emoji">🛒✨</span>
+                  <p>Keranjangmu masih kosong, yuk pilih camilan favoritmu!</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cart-total">
+        <span>💳 Total Belanja</span>
+        <strong id="total">Rp 0</strong>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontak">
+      <div class="contact-copy">
+        <p class="eyebrow">💬 HUBUNGI KAMI 💬</p>
+        <h2>Ada yang ingin ditanyakan?</h2>
+
+        <p>
+          Punya pertanyaan atau ingin memberikan
+          masukan? Silakan kirim pesan melalui
+          formulir berikut. Kami senang mendengar darimu! 💛
+        </p>
+
+        <div class="contact-note">
+          ✦ Terima kasih sudah jajan di Ruang_Kunyah! Semoga harimu menyenangkan~ ✦
+        </div>
+      </div>
+
+      <form id="form-kontak" class="contact-form" novalidate>
+        <label for="nama">👋 Nama Kamu</label>
+        <input
+          type="text"
+          id="nama"
+          placeholder="Siapa namamu?"
+          required>
+
+        <label for="email">📧 Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="nama@email.com"
+          required>
+
+        <label for="pesan">💭 Pesan Kamu</label>
+        <textarea
+          id="pesan"
+          rows="4"
+          placeholder="Ada yang ingin diceritakan?"
+          required></textarea>
+
+        <p id="info-form" class="info" aria-live="polite"></p>
+
+        <button class="btn submit-btn" type="submit">
+          ✨ Kirim Pesan
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#">
+      <span class="brand-icon">🥯</span>
+      <span>Ruang<span class="brand-accent">_Kunyah</span></span>
+    </a>
+
+    <p>
+      Dibuat dengan 💛 © 2026 Ruang_Kunyah. Semua Hak Dilindungi.
+    </p>
+  </footer>
+
+  <script src="keranjang.js"></script>
+</body>
+</html>
